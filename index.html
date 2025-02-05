@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Game</title>
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <h1>ColorGame</h1>
+      <div class="game-colorbox-wrapper">
+        <div id="target-color" data-testid="colorBox"></div>
+        <p id="game-rule" data-testid="gameInstructions">
+          Match The color: Click on the button that matches the color in the box above
+        </p>
+        <p id="game-status" data-testid="gameStatus"></p>
+        <div id="color-options-wrapper">
+          <div class="color-options" data-testid="colorOption"></div>
+          <div class="color-options" data-testid="colorOption"></div>
+          <div class="color-options" data-testid="colorOption"></div>
+          <div class="color-options" data-testid="colorOption"></div>
+          <div class="color-options" data-testid="colorOption"></div>
+          <div class="color-options" data-testid="colorOption"></div>
+        </div>
+        <button data-testid="newGameButton" id="new-game">New Game</button>
+      </div>
+      <div id="score-board">
+        <p data-testid="score">Score: <span id="score">0</span></p>
+      </div>
+    </div>
+    <audio id="correct" src="./audio/correct.mp3"></audio>
+    <audio id="wrong" src="./audio/wrong.mp3"></audio>
+    <audio id="restart" src="./audio/restart.wav"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
